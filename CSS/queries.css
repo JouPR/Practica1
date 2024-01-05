@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Cabin & family= Hedvig+Letters+Serif:opsz@12..24 & family= Playfair+Display & display=swap') ;
+
+:root{
+    --variable-font:'Cabin', sans-serif;
+    --variable-font2:'Playfair Display', serif;
+}
+@media screen and (max-width: 830px){
+    #Logo{
+        display: none;
+    }
+    
+    #Logo_movil{
+        display: block;
+    }
+    .navbar_conteiner_links #navbar_login{
+        display: none;
+    }
+    #other_links a,  #other_links #line {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 325px){
+.conteiner_Psale p{
+    display: none;
+}
+}
+    
+@media screen and (max-width: 320px){
+    
+    .home{
+        display: none;
+    }
+
+    .home_movil{
+    display: grid;
+    width: 100%;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    } 
+
+    .section_presentation .section_input {
+        width: fit-content;
+        position: relative;
+        height: 40px;
+        grid-column: 3/11;
+        grid-row: 2/3;
+    }
+
+    .conteiner_Psale{
+        font-family: var(--variable-font2);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 50px 50px 300px 0;
+        gap: 5%;
+    }
+    .conteiner_Psale .img_sale{
+      grid-row: 2;
+    }
+    .conteiner_Psale .text_sale{
+        grid-row: 1;
+      }
+    
+    .text_sale p {
+        margin: 5% 0;
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .text_sale .sale_next{
+        display: none;
+    }
+    .text_sale .sale_prev{
+        display: none;
+    }
+
+    .conteiner_Prent{
+        font-family: var(--variable-font2);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        margin: 50px 0px;
+        gap: 5%;
+        height: 600px;
+    }
+   
+    .text_rent .rent_next{
+        display: none;
+    }
+    .text_rent .rent_prev{
+        display: none;
+    }
+
+    .text_rent p {
+        margin: 5% 3%;
+        text-align: justify;
+        font-size: 20px;
+    padding: 0px;
+
+    }
+    .img_sale img{
+        object-fit: cover;
+    }
+
+    .gallery_Developments .Developments_img{
+        display: none;
+    }
+   
+    .Developments_text h3{
+        font-size: 50px;
+    }
+    .Developments_text{
+        display:inline;
+              
+    }
+    .responsiveD{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    } 
+
+    .aditional{
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        font-family: var(--variable-font2);
+        margin: 50px 0px;
+    } 
+    .conteiner_services{
+        
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 50px 0px 100px 0px;
+        gap: 50px;
+        overflow: hidden;
+
+    }
+    .buttons_services .services_next {
+        display: none;
+    }
+    .buttons_services .services_prev {
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    
+} 
